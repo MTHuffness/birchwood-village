@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.rentbirchwoodvillage.com/</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/hero.jpg</image:loc>
+      <image:title>Birchwood Village Apartments courtyard pavilion</image:title>
+      <image:caption>Covered picnic pavilion and fire pit in the paver courtyard at Birchwood Village</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/property-frontage.jpg</image:loc>
+      <image:title>Birchwood Village Apartments frontage</image:title>
+      <image:caption>Birchwood Village frontage and signage on East Uintah Street, Colorado Springs</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/exterior-row.jpg</image:loc>
+      <image:title>Single-level ranch apartment homes</image:title>
+      <image:caption>Single-level brick ranch apartment homes along a sidewalk</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/swimming-pool.jpg</image:loc>
+      <image:title>Seasonal swimming pool</image:title>
+      <image:caption>Seasonal swimming pool with fenced deck at Birchwood Village</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/courtyard-pavilion.jpg</image:loc>
+      <image:title>Courtyard pavilion and fire pit</image:title>
+      <image:caption>Covered picnic pavilion and fire pit in the paver courtyard</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/courtyard-water-feature.jpg</image:loc>
+      <image:title>Courtyard water feature</image:title>
+      <image:caption>Paver courtyard with water feature and lamp posts</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/courtyard-seating.jpg</image:loc>
+      <image:title>Courtyard picnic and grilling area</image:title>
+      <image:caption>Courtyard picnic tables and grilling area</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/pavilion-picnic.jpg</image:loc>
+      <image:title>Covered pavilion with picnic seating</image:title>
+      <image:caption>Covered pavilion with picnic seating beside the courtyard</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/pavilion-lawn.jpg</image:loc>
+      <image:title>Pavilion and open lawn</image:title>
+      <image:caption>Pavilion and open lawn with patio umbrellas</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/courtyard-lawn.jpg</image:loc>
+      <image:title>Courtyard lawns and mature trees</image:title>
+      <image:caption>Courtyard lawns and mature trees</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/walkway.jpg</image:loc>
+      <image:title>Landscaped walkway</image:title>
+      <image:caption>Landscaped walkway between brick apartment buildings</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/laundry-facility.jpg</image:loc>
+      <image:title>On-site laundry facility</image:title>
+      <image:caption>On-site laundry facility with washers and dryers</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/kitchen-renovated.jpg</image:loc>
+      <image:title>Renovated one-bedroom apartment kitchen</image:title>
+      <image:caption>Renovated kitchen with granite counters, shaker cabinets and stainless microwave</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/kitchen-updated.jpg</image:loc>
+      <image:title>Updated apartment kitchen</image:title>
+      <image:caption>Updated kitchen with full-size appliances</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/bathroom-renovated.jpg</image:loc>
+      <image:title>Renovated apartment bathroom</image:title>
+      <image:caption>Renovated bathroom with tile tub surround and mosaic accent</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/remodeled-bath.jpg</image:loc>
+      <image:title>Remodeled bathroom</image:title>
+      <image:caption>Remodeled bathroom</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/bedroom.jpg</image:loc>
+      <image:title>One-bedroom apartment bedroom</image:title>
+      <image:caption>Bedroom with ceiling fan and wood-style plank flooring</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/living-area.jpg</image:loc>
+      <image:title>Apartment living area</image:title>
+      <image:caption>Living area with large window</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/living-kitchenette.jpg</image:loc>
+      <image:title>Open living area and kitchen</image:title>
+      <image:caption>Open living area with kitchen and ceiling fan</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/remodeled-interior.jpg</image:loc>
+      <image:title>Remodeled apartment interior</image:title>
+      <image:caption>Remodeled apartment interior</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.rentbirchwoodvillage.com/assets/img/gallery/storage.jpg</image:loc>
+      <image:title>In-unit storage closet</image:title>
+      <image:caption>In-unit storage closet</image:caption>
+    </image:image>
   </url>
 </urlset>

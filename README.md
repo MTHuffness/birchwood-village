@@ -15,7 +15,7 @@ index.html              Single-page site (all sections)
 CNAME                   Custom domain for GitHub Pages
 .nojekyll               Serve files as-is, no Jekyll processing
 robots.txt              Search engine directives
-sitemap.xml             Sitemap
+sitemap.xml             Sitemap, including an image sitemap of every photo
 assets/
   css/styles.css        All styles
   js/main.js            Nav, gallery filter, lightbox, scroll effects
@@ -68,17 +68,60 @@ Only cancel Bluehost once the new site is confirmed live and email has been hand
 
 ---
 
+## SEO
+
+Everything search engines use lives in three places. When a fact about the property changes,
+it usually has to change in more than one of them.
+
+**1. `<head>` of `index.html`** — title, meta description, canonical URL, robots directive,
+Open Graph / Twitter cards, and geo coordinates (38.848168, -104.760807 — the 3615 building).
+
+**2. The JSON-LD block in `<head>`** — one `@graph` with six linked nodes:
+
+| Node | What it does |
+|------|--------------|
+| `WebSite` / `WebPage` | Ties the page to the site and to the property |
+| `ImageObject` | Names the hero as the page's primary image |
+| `RealEstateAgent` | Pikes Peak Real Estate Sales & Property Management, LLC |
+| `ApartmentComplex` + `LocalBusiness` | The property: address, geo, phone, hours, amenities, the one-bedroom floor plan, the Apartments.com listing |
+| `FAQPage` | The eight Q&As, mirroring the on-page FAQ word for word |
+
+**Every fact in the JSON-LD must also appear as visible text on the page.** Google discounts —
+and can penalize — structured data that claims things the page doesn't say. So when hours,
+pet fees, amenities or parking details change, update the visible section *and* the matching
+JSON-LD *and* the FAQ answer if one covers it.
+
+**3. `sitemap.xml`** — the single URL plus an `<image:image>` entry for all 21 photos, which is
+what gets them into Google Images. Add an entry when you add a gallery photo, and bump
+`<lastmod>` whenever the page content meaningfully changes.
+
+### After deploying changes
+
+1. Verify the markup at [validator.schema.org](https://validator.schema.org/) and
+   [Rich Results Test](https://search.google.com/test/rich-results)
+2. Submit the site in [Google Search Console](https://search.google.com/search-console) and
+   [Bing Webmaster Tools](https://www.bing.com/webmasters), and submit `sitemap.xml` in both
+3. Claim/verify the **Google Business Profile** for the address — for a local apartment
+   community that listing drives more traffic than anything on this site. Keep the name,
+   address, phone and hours character-for-character identical to what the site says; consistency
+   across listings (Google, Apartments.com, Yelp, Bing Places) is what local ranking rewards.
+
+---
+
 ## Editing common things
 
 **Phone number** — appears in several places in `index.html`. Search for `596-2156`
 (both the display text and the `tel:+17195962156` links) and the JSON-LD block in `<head>`.
 
-**Office hours** — the `<dl class="hours">` block in the contact section, and the
-`openingHoursSpecification` in the JSON-LD block for search engines. Update both.
+**Office hours** — the `<dl class="hours">` block in the contact section, the
+`openingHoursSpecification` in the JSON-LD block, and the last FAQ answer (both the visible
+one and its copy in the `FAQPage` schema). Four places.
 
-**Amenities** — the two `<ul class="check-list">` blocks in the amenities section.
+**Amenities** — the two `<ul class="check-list">` blocks in the amenities section, the
+`amenityFeature` arrays in the JSON-LD, and the "What amenities are included?" FAQ.
 
-**Pet / parking details** — the `<dl class="spec">` blocks in the policies section.
+**Pet / parking details** — the `<dl class="spec">` blocks in the policies section, and the
+pet and parking FAQ answers (visible + schema).
 
 **Pricing link** — the apartments.com URL, used by the two "Check pricing & availability"
 and "See current listings" links.
@@ -89,6 +132,7 @@ and "See current listings" links.
 2. Copy an existing `<button class="shot">` block in the gallery section and update
    `data-full`, `data-caption`, `src`, `alt`, `width`, `height`
 3. Set `data-cat` to `exterior`, `amenities`, or `interiors` so the filter buttons work
+4. Add a matching `<image:image>` entry in `sitemap.xml` so it can appear in Google Images
 
 Keep photos under ~1600px on the long edge. To optimize on macOS:
 

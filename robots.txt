@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Nothing here is private; assets must stay crawlable for image search
+# and for rich results that reference the logo and photos.
+Allow: /assets/
+
 Sitemap: https://www.rentbirchwoodvillage.com/sitemap.xml
