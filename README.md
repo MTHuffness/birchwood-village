@@ -27,25 +27,18 @@ No build step, no dependencies, no framework. Edit the files and push.
 
 ---
 
-## Before launch — two things to confirm
+## Contact routing
 
-### 1. The email address on the "Email the office" button
+Inquiries go to **contact.ppre@gmail.com** — a standalone Gmail account, not domain-hosted mail.
+Two consequences worth knowing:
 
-The old site's contact form never exposed an email address, so the button currently points at:
+- Cancelling Bluehost will **not** affect email. There is no mail hosted at the domain to migrate.
+- No MX records are needed for this address. When editing DNS, you only touch the A and CNAME
+  records listed below.
 
-```
-leasing@rentbirchwoodvillage.com
-```
-
-**Confirm this mailbox exists (or swap in the real one).** It appears once, in `index.html`,
-in the `mailto:` link inside the contact section — search for `leasing@`.
-
-### 2. Email hosting, if it lives at Bluehost
-
-If any `@rentbirchwoodvillage.com` email is currently hosted **by Bluehost**, cancelling that
-hosting plan will kill the email along with the website. GitHub Pages serves web only — it does
-not host mail. Move email to another provider (Google Workspace, Fastmail, Zoho, etc.) *before*
-cancelling, and keep the MX records pointed there.
+The address appears three times in `index.html`: the "Email the office" button, the "Reach us"
+card, and the `email` field in the JSON-LD block. Update all three if it ever changes —
+search for `contact.ppre`.
 
 ---
 
@@ -63,7 +56,7 @@ The domain's nameservers are at GoDaddy (`ns75/ns76.domaincontrol.com`). In
 | CNAME | www  | `MTHuffness.github.io`  |
 
 Delete the old A record pointing at `162.241.224.59` (Bluehost) and any conflicting
-`www` record. **Leave MX records alone** — those route email.
+`www` record. Leave every other record type alone — change only what's in the table above.
 
 DNS changes take anywhere from a few minutes to a few hours to propagate. Once they have:
 
