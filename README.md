@@ -84,7 +84,7 @@ Open Graph / Twitter cards, and geo coordinates (38.848168, -104.760807 — the 
 | `ImageObject` | Names the hero as the page's primary image |
 | `RealEstateAgent` | Pikes Peak Real Estate Sales & Property Management, LLC |
 | `ApartmentComplex` + `LocalBusiness` | The property: address, geo, phone, hours, amenities, the one-bedroom floor plan, the Apartments.com listing |
-| `FAQPage` | The eight Q&As, mirroring the on-page FAQ word for word |
+| `FAQPage` | The seven Q&As, mirroring the on-page FAQ word for word |
 
 **Every fact in the JSON-LD must also appear as visible text on the page.** Google discounts —
 and can penalize — structured data that claims things the page doesn't say. So when hours,
